@@ -11,6 +11,7 @@ This is a simple Todo app that allows you to manage your tasks and events. The a
 2. Edit a task by clicking on the “Edit” button.
 3. Delete a task by clicking on the “Delete” button.
 4. Disable a task by clicking on task.
+5. Enable dark and light mode by clicking toggle button.
 
 ## Contributing
 If you would like to contribute to this project, please follow these steps:
