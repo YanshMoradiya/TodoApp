@@ -19,6 +19,13 @@ If you would like to contribute to this project, please follow these steps:
 2. Create a new branch with your changes.
 3. Submit a pull request.
 
+## Tech stack
+1. React
+2. Redux Toolkit
+3. Tailwind css
+
 ## Deployment
 link : https://todo-app-seven-livid.vercel.app/
+
+
 
