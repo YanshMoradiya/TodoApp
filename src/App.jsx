@@ -29,9 +29,6 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem('theme', JSON.stringify(theme));
-  }, [theme]);
-
-  useEffect(() => {
     document.querySelector('html').classList.remove('dark', 'light');
     document.querySelector('html').classList.add(theme);
   }, [theme]);
