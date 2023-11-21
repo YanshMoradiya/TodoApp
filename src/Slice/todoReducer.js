@@ -5,7 +5,7 @@ const initialState = {
         // { id: 1, text: 'Hello', complated: false,priority:1 }
     ],
     addInput: { value: '', status: true, id: '1', priority: '' },
-    theme: 'dark',
+    theme: 'default',
     color: { value: '', id: '' }
 };
 
