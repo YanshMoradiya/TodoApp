@@ -38,7 +38,6 @@ function App() {
 
   return (
     <>
-
       <div className='p-3  w-full h-full'>
         <AddTodo />
         <Todo />
