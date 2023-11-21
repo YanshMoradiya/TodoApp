@@ -25,7 +25,7 @@ If you would like to contribute to this project, please follow these steps:
 3. Tailwind css
 
 ## Deployment
-link : https://todo-app-bay-five.vercel.app/
+link : https://todo-app-olive-one.vercel.app/
 
 
 
