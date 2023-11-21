@@ -19,11 +19,8 @@ function App() {
   }, [todoState]);
 
   useEffect(() => {
-    let storeTheme = JSON.parse(localStorage.getItem('theme'));
-    if (storeTheme === 'default') {
-      storeTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
-    }
-    console.log(window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light')
+    let storeTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
+    console.log(storeTheme)
     dispatch(changeTheme(storeTheme));
   }, []);
 
