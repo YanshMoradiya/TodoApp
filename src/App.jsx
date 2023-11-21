@@ -23,6 +23,7 @@ function App() {
     if (storeTheme === 'default') {
       storeTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
     }
+    console.log(window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light')
     dispatch(changeTheme(storeTheme));
   }, []);
 
