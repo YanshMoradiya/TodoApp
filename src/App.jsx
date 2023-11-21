@@ -1,4 +1,3 @@
-
 import { useDispatch, useSelector } from 'react-redux'
 import './App.css'
 import AddTodo from './Componants/AddTodo'
@@ -20,15 +19,15 @@ function App() {
   }, [todoState]);
 
   useEffect(() => {
-    const storeTheme = JSON.parse(localStorage.getItem('theme'))
+    let storeTheme = JSON.parse(localStorage.getItem('theme'))
+    if (storeTheme === 'default') {
+      storeTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
+    }
     dispatch(changeTheme(storeTheme));
   }, []);
 
   useEffect(() => {
     localStorage.setItem('theme', JSON.stringify(theme));
-  }, [theme]);
-
-  useEffect(() => {
     document.querySelector('html').classList.remove('dark', 'light');
     document.querySelector('html').classList.add(theme);
   }, [theme]);
