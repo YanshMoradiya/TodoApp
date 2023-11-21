@@ -20,7 +20,6 @@ function App() {
 
   useEffect(() => {
     let storeTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
-    console.log(storeTheme)
     dispatch(changeTheme(storeTheme));
   }, []);
 
